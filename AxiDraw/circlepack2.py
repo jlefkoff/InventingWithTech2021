@@ -3,6 +3,7 @@ import matplotlib.patches as mpatches
 from matplotlib.collections import PatchCollection
 import matplotlib.pyplot as plt
 
+
 x_bounds = [-10, 10]
 y_bounds = [-10, 10]
 
@@ -48,4 +49,5 @@ ax.set_ylim(y_bounds)
 collection = PatchCollection(patches, match_original=True)
 ax.add_collection(collection)
 
+plt.savefig('packC1.svg', bbox_inches = 'tight', pad_inches = 0)
 plt.show()
